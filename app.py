@@ -183,6 +183,14 @@ def career():
     return render_template('career.html')
 
 
+@app.route('/Donate_Mpesa/' , methods =['POST','GET'])
+def Donate_Mpesa():
+    
+    
+    
+    return render_template('bill.html')
+
+
 if __name__ == '__main__':
     app.secret_key = 'private_tings'
-    app.run(debug=True,port=5007)
+    app.run(debug=True,port=5006)

@@ -8,19 +8,10 @@
 
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
 
-    <!--
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXXXh379/gErwcOvf+zLeJdy/apuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!---->
+    <link href="{{ url_for('static', filename='style/all.css') }}" integrity="sha384-SZXXXh379/gErwcOvf+zLeJdy/apuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-
-    <link href="https://fonts.googleapis.com/css2?family-Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
--->
-
-    <link href="{{ url_for("https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXXXh379/gErwcOvf+zLeJdy/apuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">) }}" rel="stylesheet">
-
-    <link href="{{ url_for("https://fonts.gstatic.com") }}" rel="stylesheet">
-
-    <link href="{{ url_for('https://fonts.googleapis.com/css2?family-Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/ionicons.js') }}"></script>
 
     <link href="{{ url_for('static', filename='style/style_donate.css') }}" rel="stylesheet">
 
@@ -60,6 +51,7 @@
                 </li>
                 <li>
                     <a href="{{ url_for('donation') }}"><img src = "{{ url_for('static', filename='imgs/donation.png' ) }}" class="icon" /><span>DONATION</span></a>
+                
                 </li>
                 <li>
                     <a href="{{ url_for('contact') }}"><img src = "{{ url_for('static', filename='imgs/contact.png' ) }}" class="icon" /><span>CONTACT US</span></a>
@@ -83,7 +75,9 @@
             <p> Bravins Maternity and Rescue Centre seeks to provide a solution through construction of a maternal home that will focus solely on nursing rescued girls and mothers, and their newborns.</p>
             <p> Bravins Maternity and Rescue Centre will offer maternity care to pregnant girls and women and accommodate those who will be rescued from the pains of their stand for life.</p>
 
-            <a href="https://rzp.io/1/oPJb7367F1" target="black">DONATE</a>
+            
+                <a href="{{ url_for('Donate_Mpesa') }}"><span>DONATE</span></a>
+                
 
             <br>
 

@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br><br>
+<br>
+
+            <h3> <b> <span style = "color : rgb(110, 228, 15);">  Welcome To Donate Via Mpesa. </span> </b> </h3>
+            <br>
+            <br>
+           <div align = "center">
+
+            <form method=POST action="{{ url_for('Donate_Mpesa') }}">
+                <label for="exampleInputEmail1">Phone Number , A prompt will be sent to your Phone</label>
+                <br>
+                <b> ie 254712345678</b>
+                <br>
+                <br>
+                <input type="text" name="no" required placeholder = "Phone Number">
+
+            <br>
+            <br>
+            <button type="submit" class="btn btn-primary btn-block">Donate</button>
+    
+            </form>
+           </div>
+        </div></div>
+        </div>
+{% endblock %}
+    
