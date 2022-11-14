@@ -1,0 +1,168 @@
+body {
+    background: url(pregnant.jpg);
+    background-size: 1800px;
+}
+
+#logo1 {
+    display: inline-block;
+    float: left;
+    width: 250px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+#header1 {
+    line-height: 18px;
+}
+
+#header1 a {
+    color: blue;
+}
+
+.icon {
+    width: 40px;
+    float: top;
+    bottom: 20px;
+    position: relative;
+    display: block;
+    padding-left: 50px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: small;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#links_header li {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    border-right: 2px solid #F8F8F8;
+    margin-top: 12px;
+    padding: 2px;
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    padding-top: 88px;
+}
+
+.about .imgcontanner {
+    width: 50%;
+    position: relative;
+}
+
+.about .imgcontanner .aboutimg {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    background: url(donation.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 80px;
+    left: 32%;
+}
+
+.about .aboutcontent {
+    width: 50%;
+    padding: 80px 10% 80px 16%;
+    color: white;
+    background-color: blue;
+}
+
+.aboutcontent h5 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.aboutcontent h1 {
+    font-weight: 600;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.aboutcontent p {
+    padding-bottom: 30px;
+    line-height: 25px;
+}
+
+.aboutcontent a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 8px 40px;
+    background: linear-gradient(to right, transparent 50%, rgb(1, 161, 1)50%);
+    background-size: 200%;
+    background-position: left;
+    transition: 3s;
+    border: 2px solid white;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.aboutcontent a:hover {
+    background-position: right;
+}
+
+footer {
+    background-color: blue;
+    text-align: right;
+    line-height: 97px;
+    margin-top: 150px;
+}
+
+small {
+    color: white;
+}
+
+small img {
+    display: inline-block;
+    float: left;
+    margin: 10px;
+    width: 250px;
+    height: 80px;
+}
+
+@media only screen and (max-width: 700px) {
+    .about {
+        display: block;
+        width: 100%;
+        padding-top: 0px;
+        background-color: #F8F9FA;
+    }
+    .about .imgcontanner {
+        padding: 3%;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .about .imgcontanner .abouting {
+        position: relative;
+        width: 100%;
+        display: none;
+        height: 450px;
+        top: 0px;
+        left: 0%;
+    }
+    .about .aboutcontent {
+        width: 100%;
+        padding: 65px 4%;
+        box-sizing: border-box;
+    }
+    .aboutcontent h5 {
+        margin-bottom: 10px;
+    }
+    .aboutcontent h1 {
+        font-size: 30px;
+    }
+}

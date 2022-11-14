@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>patient care and service</title>
+    <style>
+        body {
+            background: url(photos.jpg);
+            background-size: 1800px;
+        }
+        
+        fieldset {
+            width: 60%;
+            height: 80%;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 0 010px#666;
+            text-align: left;
+            margin-left: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        #logo1 {
+            display: inline-block;
+            float: left;
+            width: 250px;
+            height: 100px;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 100px;
+        }
+        
+        #header1 {
+            line-height: 18px;
+        }
+        
+        #header1 a {
+            color: blue;
+        }
+        
+        .icon {
+            width: 40px;
+            float: top;
+            bottom: 20px;
+            position: relative;
+            display: block;
+            padding-left: 50px;
+            margin-top: 10px;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: small;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        #links_header li {
+            display: inline-block;
+            width: 120px;
+            text-align: center;
+            border-right: 2px solid #F8F8F8;
+            margin-top: 12px;
+            padding: 2px;
+        }
+        
+        legend {
+            font-size: 20px;
+        }
+        
+        #wrap {
+            width: 100px;
+            height: 35px;
+            border: 1px solid black;
+            font-size: 20px;
+            background-color: blue;
+            margin-top: 20px;
+        }
+        
+        #wrap1 {
+            width: 100px;
+            height: 35px;
+            font-size: 20px;
+            border: 1px solid black;
+            background-color: blue;
+            margin-top: 20px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        #wrap:hover {
+            cursor: pointer;
+            background-color: cyan;
+        }
+        
+        #wrap1:hover {
+            cursor: pointer;
+            background-color: cyan;
+        }
+        
+        footer {
+            background-color: blue;
+            text-align: right;
+            line-height: 97px;
+            margin-top: 50px;
+        }
+        
+        small {
+            color: white;
+        }
+        
+        small img {
+            float: left;
+            display: inline-block;
+            margin: 10px;
+            width: 250px;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body background="3.jpg" style="background-repeat:no-repeat;background-size: cover; ">
+    <div id="header1">
+        <img src = "{{ url_for('static', filename='imgs/LOGO.jpg'  ) }}" alt="logo" id="logo1">
+        <div id="icon-links">
+            <ul id="links_header" type="none">
+                <li>
+                    
+                    <a href="{{ url_for('index') }}"><img src = "{{ url_for('static', filename='imgs/home.png' ) }}" class="icon" /> <span>HOME</span></a>
+               
+                    
+                </li>
+                <li>
+                    <a href="{{ url_for('about') }}"><img src = "{{ url_for('static', filename='imgs/about.png' ) }}" class="icon" /><span>ABOUT</span></a>
+                
+                </li>
+                <li>
+                    <a href="{{ url_for('patient_care') }}"><img src = "{{ url_for('static', filename='imgs/pcs.jpg' ) }}" class="icon" /><span>PATIENT CARE AND SERVICE</span></a>
+                
+                </li>
+                <li>
+                    <a href="{{ url_for('specialist') }}"><img src = "{{ url_for('static', filename='imgs/specialist.jpg' ) }}" class="icon" /><span>SPECIALISTS</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('opd') }}"><img src = "{{ url_for('static', filename='imgs/opd.png' ) }}" class="icon" /><span>OUT PATIENT DEPARTMENT</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('faq') }}"><img src = "{{ url_for('static', filename='imgs/faq.png' ) }}" class="icon" /><span>FEEDBACK AND QUERY</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('career') }}"><img src = "{{ url_for('static', filename='imgs/career.png' ) }}" class="icon" /><span>CAREER</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('donation') }}"><img src = "{{ url_for('static', filename='imgs/donation.png' ) }}" class="icon" /><span>DONATION</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('contact') }}"><img src = "{{ url_for('static', filename='imgs/contact.png' ) }}" class="icon" /><span>CONTACT US</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        window.alert("Information is updated");
+    </script>
+    <table width="100%" height="100%">
+        <tr>
+            <td>
+                <form>
+                    <fieldset>
+                        <legend>Personal details</legend>
+                        <pre style="font-family: verdana;font-size: 15px">
+    Registration Id:<input type="text" name="registration Id" placeholder="Registration id" required="required" ><br>
+         First name: <input type="text" name="First name" required="required" placeholder="first Name"><br>
+          Last name:<input type="text" name="Last name" required="required" placeholder="last Name"><br>
+             Gender: <select name="Gender"><br><br>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    </select><br>
+      
+             Blood Group: <select name="blood">
+                    <option value="A+">A+</option> 
+                    <option value="A-">A-</option> 
+                    <option value="B+">B+</option> 
+                    <option value="B-">B-</option> 
+                    <option value="O+">O+</option> 
+                    <option value="O-">O-</option> 
+                    <option value="AB+">AB+</option> 
+                    <option value="AB-">AB-</option> 
+                    </select><br>
+             date of birth:<input type="date" name="date of birth"><br>
+     </pre>
+                    </fieldset>
+                    <td>
+
+                        <form>
+                            <fieldset><br>
+                                <legend>Contact Details</legend>
+                                <pre style="font-family: verdana;font-size: 15px">
+    first mobile no.:   <input type="number" name="first mobile no" required="required" placeholder="first mobile number"><br>
+    second mobile no:<input type="number" name="second mobile no." required="required" placeholder="second mobile number"><br>
+            Email Id:     <input type="email" name="Email id" required="required" placeholder="email id" ><br>
+             Address:
+             <textarea cols="30%" rows="5%">
+                 </textarea>
+                </pre>
+                            </fieldset><br><br><br>
+                        </form>
+                    </td>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td><br><br>
+                <form>
+                    <fieldset>
+                        <legend>Department details</legend>
+                        <pre style="font-family: verdana;font-size: 15px">
+      Room no.:<input type="number" name="Room no" required="required" placeholder="room no."><br><br>
+    Date of admit:<input type="date" name="date of admit" required="required"><br><br>
+      Time of admit:<input type="time" name=" time of admit" width="50%"><br><br>
+    consulting doctor:<input type="text" name="consulted" placeholder="doctor's Name">
+                </pre>
+                    </fieldset>
+
+                    <td>
+                        <form>
+                            <fieldset><br>
+                                <legend>Emergency Contact detail</legend>
+                                <pre style="font-family: verdana;font-size: 15px">	
+        Person Name <input type="text" name="Person Name" required="required" placeholder="name"><br>
+                Ph No.   <input type="number" name="ph no" required="required" placeholder="phone no"><br>
+              Relationship <input type="text" name="Relationship" readonly="Relationship" placeholder="Relationship">
+            </pre>
+                            </fieldset><br><br><br>
+                        </form>
+                    </td>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <form>
+        <center><button id="wrap1"><a href="patient care and service.html">Submit</a></button><button id="wrap"><a href ="index.html">Exit</a></button></center>
+    </form>
+    <footer>
+        <small>
+            <img src = "{{ url_for('static', filename='imgs/LOGO.jpg'  ) }}" alt="logo" id="logo1">
+            
+            Copyright &copy Bravins Maternity and Rescue Center &nbsp; &nbsp;</small>
+    </footer>
+</body>
+
+</html>

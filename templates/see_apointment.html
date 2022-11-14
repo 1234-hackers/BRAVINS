@@ -1,0 +1,67 @@
+{%extends "layout.html"%}
+{%block body%}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-4">
+           
+            <p>
+                <h3> <b> <span style = "color : rgb(39, 19, 218);">  MONTE CARLO HOSPITAL</span> </b> </h3>
+               
+                </p>
+                </div>
+                </div>
+                </div>
+<h3 align="center">
+Patient In Appointments
+</h3>
+<div align = "center" >
+{% for c in  ch%}
+<table margin = "600px" border="2" align = "center" width = "800px">
+    <tr>
+<th>Patient Name</th>
+<th>Patient Feeling</th>
+<th> Time Planned Time Of Arrival</th>
+<th>Action</th>
+        </tr>
+<br>
+        <tr>
+            <td>  {{ c.patient}} </td>
+            <td> {{ c.reason}} </td>
+            <td>  {{ c.time_of_day}} </td>
+            <td> 
+                <a href="/add_a_patient" > <button type="submit" class="btn btn-primary btn-block">Serve</button></a>
+             </td>
+        </tr>
+{% endfor%}
+
+
+</div>
+
+<div class="form-group">
+
+
+    <h3>  Patients Through The Reception  </h3>
+
+{% for x in  ar%}
+<table margin = "600px" border="2" align = "center" width = "800px">
+    <tr>
+<th>Patient Name</th>
+<th>Home Town</th>
+<th> Body Temparature</th>
+<th>Weight</th>
+<th>Action</th>
+        </tr>
+        <tr>
+            <td>  {{ x.name}} </td>
+            <td> {{ x.town}} </td>
+            <td>  {{ x.Temparature}} </td>
+            <td>  {{ x.weight}} </td>
+            <td> 
+                <a href="/add_a_patient" > <button type="submit" class="btn btn-primary btn-block">Serve</button></a>
+             </td>
+        </tr>
+        <br>
+{% endfor%}
+</div>
+
+{% endblock%}

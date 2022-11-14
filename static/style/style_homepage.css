@@ -1,0 +1,100 @@
+            body {
+                margin: 0;
+                font-family: arial;
+                background-image: url(banner1.jpg);
+                background-size: cover;
+            }
+            
+            #logo1 {
+                display: inline-block;
+                float: left;
+                width: 250px;
+                height: 100px;
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-right: 100px;
+            }
+            
+            #header1 {
+                line-height: 18px;
+            }
+            
+            #header1 a {
+                color: blue;
+            }
+            
+            .icon {
+                width: 40px;
+                float: top;
+                bottom: 20px;
+                position: relative;
+                display: block;
+                padding-left: 50px;
+                margin-top: 10px;
+            }
+            
+            a {
+                text-decoration: none;
+                font-size: small;
+            }
+            
+            a:hover {
+                text-decoration: underline;
+            }
+            
+            #links_header li {
+                display: inline-block;
+                width: 120px;
+                text-align: center;
+                border-right: 2px solid #F8F8F8;
+                margin-top: 12px;
+                padding: 2px;
+            }
+            
+            #banner {
+                width: 100px;
+                margin-top: 50px;
+            }
+            
+            footer {
+                background-color: blue;
+                text-align: right;
+                line-height: 97px;
+                margin-top: 150px;
+            }
+            
+            small {
+                color: white;
+            }
+            
+            small img {
+                display: inline-block;
+                float: left;
+                margin: 10px;
+                width: 250px;
+                height: 80px;
+            }
+            
+            #extreme1 {
+                border-left: 1px solid black;
+                border-radius: 20px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            
+            #extreme2 {
+                border-right: 1px solid black;
+                border-radius: 20px;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+            
+            .social-icon {
+                color: blue;
+                margin-top: 150px;
+                line-height: 20px;
+                margin-left: 50px;
+                margin-right: 50px;
+                transition: color 0.2s;
+                text-decoration: none;
+            }

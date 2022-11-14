@@ -1,0 +1,109 @@
+body {
+    background: url(banner1.jpg);
+    background-size: 1800px;
+}
+
+#logo1 {
+    display: inline-block;
+    float: left;
+    width: 250px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+#header1 {
+    line-height: 18px;
+}
+
+#header1 a {
+    color: blue;
+}
+
+.icon {
+    width: 40px;
+    float: top;
+    bottom: 20px;
+    position: relative;
+    display: block;
+    padding-left: 50px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: small;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#links_header li {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    border-right: 2px solid #F8F8F8;
+    margin-top: 12px;
+    padding: 2px;
+}
+
+#example {
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 010px#666;
+    text-align: left;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#example2 {
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 010px#666;
+    text-align: left;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+img {
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 010px#666;
+}
+
+.contact {
+    text-align: center;
+    color: blue;
+    font-size: bold;
+}
+
+footer {
+    background-color: blue;
+    text-align: right;
+    line-height: 97px;
+    margin-top: 20px;
+}
+
+small {
+    color: white;
+}
+
+small img {
+    display: inline-block;
+    float: left;
+    margin: 10px;
+    width: 250px;
+    height: 80px;
+}
+
+.services {
+    color: white;
+    padding: 2px;
+    margin-top: 50px;
+}

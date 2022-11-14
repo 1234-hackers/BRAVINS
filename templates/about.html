@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="{{ url_for('static', filename='style/style_about.css') }}" rel="stylesheet">
+    <title>About</title>
+</head>
+
+<body bgcolor="blue">
+    <div id="header1">
+        <img src = "{{ url_for('static', filename='imgs/LOGO.jpg'  ) }}" alt="logo" id="logo1">
+        <div id="icon-links">
+            <ul id="links_header" type="none">
+                <li>
+                    
+                    <a href="{{ url_for('index') }}"><img src = "{{ url_for('static', filename='imgs/home.png' ) }}" class="icon" /> <span>HOME</span></a>
+               
+                    
+                </li>
+                <li>
+                    <a href="{{ url_for('about') }}"><img src = "{{ url_for('static', filename='imgs/about.png' ) }}" class="icon" /><span>ABOUT</span></a>
+                
+                </li>
+                <li>
+                    <a href="{{ url_for('patient_care') }}"><img src = "{{ url_for('static', filename='imgs/pcs.jpg' ) }}" class="icon" /><span>PATIENT CARE AND SERVICE</span></a>
+                
+                </li>
+                <li>
+                    <a href="{{ url_for('specialist') }}"><img src = "{{ url_for('static', filename='imgs/specialist.jpg' ) }}" class="icon" /><span>SPECIALISTS</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('opd') }}"><img src = "{{ url_for('static', filename='imgs/opd.png' ) }}" class="icon" /><span>OUT PATIENT DEPARTMENT</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('faq') }}"><img src = "{{ url_for('static', filename='imgs/faq.png' ) }}" class="icon" /><span>FEEDBACK AND QUERY</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('career') }}"><img src = "{{ url_for('static', filename='imgs/career.png' ) }}" class="icon" /><span>CAREER</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('donation') }}"><img src = "{{ url_for('static', filename='imgs/donation.png' ) }}" class="icon" /><span>DONATION</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('contact') }}"><img src = "{{ url_for('static', filename='imgs/contact.png' ) }}" class="icon" /><span>CONTACT US</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <table width="1200" height="800">
+        <tr>
+            <td colspan="3">
+                <fieldset id="example">
+
+                    <h1>
+                        <center>About us</center>
+                    </h1>
+                    <p style="font-family: elephant; font-size: 20px">The Bravins Maternity and Rescue Centre will target the vulnerable pregnant girls and women in the society who face challenges in trying to access maternity care for themselves and their newborns. The rescue centre will serve to provide
+                        a home for the rescued girls and women and their newborns. </p>
+                </fieldset>
+            </td>
+
+            <td colspan="3">
+                <fieldset id="example2">
+                    <h1>
+                        <center>Gallery</center>
+                    </h1>
+                   
+                    <img wifth="600" src = "{{ url_for('static', filename='imgs/photos.jpg'  ) }}">
+                </fieldset>
+            </td>
+        </tr>
+        <div class="services">
+            <tr height="50" style="font-size: 30px">
+                <th colspan="6">KEY SERVICES</th>
+                <tr height="150">
+                    <th>
+                        <img  width="200" height="150" src = "{{ url_for('static', filename='imgs/about.png') }}">
+                    </th>
+                    <th>
+                      
+                        <img  width="200" height="150" src = "{{ url_for('static', filename='imgs/patient care and service.jpg') }}">
+                    </th>
+                    <th>
+              
+                        <img  width="200" height="150" src = "{{ url_for('static', filename='imgs/counseling.png') }}">
+                    </th>
+                    <th>
+                   
+                        <img  width="200" height="150" src = "{{ url_for('static', filename='imgs/pregnant.png') }}">
+                    </th>
+                    <th>
+                       
+                        <img  width="200" height="150" src = "{{ url_for('static', filename='imgs/self.jpg') }}">
+                    </th>
+
+                </tr>
+                <tr height="50" style="font-size: 20px">
+                    <th>Provide maternal care to girls and mothers with unwanted pregnancies.</th>
+                    <th>Health care support to pregnant girls/mothers and their new born babies.</th>
+                    <th>Guidance and counseling.</th>
+                    <th>Provide community awareness on pregnancy, prenatal and postnatal care.</th>
+                    <th>Provide literacy and business skills for self-employment.</th>
+                </tr>
+            </tr>
+        </div>
+    </table>
+    <div class="contact">
+        <h3><address>
+        CONTACT US<br>
+        24X7 HELPLINE: +254 798 221 710 <br>
+    EMAIL: nyabokemoranga03@gmail.com  <br>
+    ADDRESS: Suguta Road, Kileleshwa Kenya  <br>
+    WEBSITE: www.bravinsmaternity.com<br> 
+    CELLPHONE: +254 798 221 710 <br></address>
+        </h3>
+    </div>
+    <hr color="black" size="2">
+    <footer>
+        <small>
+            <img src = "{{ url_for('static', filename='imgs/LOGO.jpg'  ) }}" alt="logo" id="logo1">
+            
+            Copyright &copy Bravins Maternity and Rescue Center &nbsp; &nbsp;</small>
+    </footer>
+</body>
+
+</html>

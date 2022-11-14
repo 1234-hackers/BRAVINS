@@ -1,0 +1,181 @@
+body {
+    background: url(banner4.jpg);
+    background-size: 1800px;
+}
+
+.contact {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 175px 0;
+}
+
+.contactcontainner {
+    width: 78%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.contactcontainner .containner {
+    width: 30%;
+}
+
+.contactcontainner .containner #heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    margin-bottom: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .07);
+}
+
+.heading .icon {
+    padding: 0 20px;
+    font-size: 20px;
+    color: rgb(3, 180, 3);
+    float: left;
+    margin-top: 20px;
+}
+
+.heading.info {
+    width: 70%;
+    margin: 25px auto;
+    color: white;
+}
+
+.heading .info #contactinfo {
+    color: blue;
+    font-weight: 500;
+}
+
+.heading .info #cell {
+    color: blue;
+    font-weight: 500;
+}
+
+.heading .info #address {
+    color: blue;
+    font-weight: 500;
+}
+
+input {
+    width: 250px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 010px#666;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    outline: none;
+}
+
+#example {
+    width: 250px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 010px#666;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#example1 {
+    width: 120px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 010px#666;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#logo1 {
+    display: inline-block;
+    float: left;
+    width: 250px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+#header1 {
+    line-height: 18px;
+}
+
+#header1 a {
+    color: blue;
+}
+
+.icon {
+    width: 40px;
+    float: top;
+    bottom: 20px;
+    position: relative;
+    display: block;
+    padding-left: 50px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: small;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#links_header li {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    border-right: 2px solid #F8F8F8;
+    margin-top: 12px;
+    padding: 2px;
+}
+
+footer {
+    background-color: blue;
+    text-align: right;
+    line-height: 97px;
+    margin-top: 200px;
+}
+
+small {
+    color: white;
+}
+
+small img {
+    display: inline-block;
+    float: left;
+    margin: 10px;
+    width: 250px;
+    height: 80px;
+}
+
+@media only screen and (max-width:700px) {
+    .contact {
+        padding: 50px 0;
+    }
+    .contactcontainner {
+        width: 95%;
+        display: block;
+    }
+    .contactcontainner.containner {
+        width: 100%;
+    }
+    .messageform {
+        width: 100%;
+        margin-left: 0px;
+        padding: 1px 0;
+    }
+    .messageform .form {
+        width: 93%;
+        margin: 50px auto;
+    }
+}

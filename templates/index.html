@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <!--
+    <link rel="stylesheet" href="style_homepage.css">
+-->
+    <link href="{{ url_for('static', filename='style/style_homepage.css') }}" rel="stylesheet">
+    <title>Bravins Maternity and Rescue Center</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div id="header1">
+        <!--
+        <img src="LOGO.jpg" alt="logo" id="logo1">
+    -->
+        <img src = "{{ url_for('static', filename='imgs/LOGO.jpg'  ) }}" alt="logo" id="logo1">
+        <div id="icon-links">
+            <ul id="links_header" type="none">
+                <li>
+                    
+                    <a href="{{ url_for('index') }}"><img src = "{{ url_for('static', filename='imgs/home.png' ) }}" class="icon" /> <span>HOME</span></a>
+               
+                    
+                </li>
+                <li>
+                    <a href="{{ url_for('about') }}"><img src = "{{ url_for('static', filename='imgs/about.png' ) }}" class="icon" /><span>ABOUT</span></a>
+                
+                </li>
+                <li>
+                    <a href="{{ url_for('patient_care') }}"><img src = "{{ url_for('static', filename='imgs/pcs.jpg' ) }}" class="icon" /><span>PATIENT CARE AND SERVICE</span></a>
+                
+                </li>
+                <li>
+                    <a href="{{ url_for('specialist') }}"><img src = "{{ url_for('static', filename='imgs/specialist.jpg' ) }}" class="icon" /><span>SPECIALISTS</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('opd') }}"><img src = "{{ url_for('static', filename='imgs/opd.png' ) }}" class="icon" /><span>OUT PATIENT DEPARTMENT</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('faq') }}"><img src = "{{ url_for('static', filename='imgs/faq.png' ) }}" class="icon" /><span>FEEDBACK AND QUERY</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('career') }}"><img src = "{{ url_for('static', filename='imgs/career.png' ) }}" class="icon" /><span>CAREER</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('donation') }}"><img src = "{{ url_for('static', filename='imgs/donation.png' ) }}" class="icon" /><span>DONATION</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('contact') }}"><img src = "{{ url_for('static', filename='imgs/contact.png' ) }}" class="icon" /><span>CONTACT US</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--
+
+    <img style="width:100%" name="slide" height="400px" id="banner">
+-->
+
+    <img style="width:100%" name="slide" height="400px" id="banner">
+
+
+    <!--
+    <script src="homepage.js"></script>
+    -->
+
+
+    <script src="{{ url_for('static', filename='js/homepage.js') }}"></script>
+
+    <div class="social-icon">
+        <a class="social-icon" href="https://twitter.com" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a class="social-icon" href="https://instagram.com" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a class="social-icon" href="https://facebook.com" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+    </div>
+
+    <script type="module" src="{{ url_for('static', filename='js/ionicons.esm.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/ionicons.js') }}"></script>
+    
+    <footer>
+        <small>
+          
+        <img src = "{{ url_for('static', filename='imgs/LOGO.jpg'  ) }}" alt="logo" id="logo1">
+            
+            Copyright &copy Bravins Maternity and Rescue Center &nbsp; &nbsp;</small>
+    </footer>
+</body>
+
+</html>

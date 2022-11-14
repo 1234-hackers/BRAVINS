@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Out Patient Department</title>
+    <style type="text/css">
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(pregnant.png);
+            background-size: 2130px;
+            background-position: top;
+        }
+        
+        #logo1 {
+            display: inline-block;
+            float: left;
+            width: 250px;
+            height: 100px;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 100px;
+        }
+        
+        #header1 {
+            line-height: 18px;
+        }
+        
+        #header1 a {
+            color: blue;
+        }
+        
+        .icon {
+            width: 40px;
+            float: top;
+            bottom: 20px;
+            position: relative;
+            display: block;
+            padding-left: 50px;
+            margin-top: 10px;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: small;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        #links_header li {
+            display: inline-block;
+            width: 120px;
+            text-align: center;
+            border-right: 2px solid #F8F8F8;
+            margin-top: 12px;
+            padding: 2px;
+        }
+        
+        table {
+            font-family: arial;
+            border-radius: 3px;
+            border-color: solid #fff;
+        }
+        
+        tr {
+            border: none;
+        }
+        
+        td {
+            border: none;
+        }
+        
+        input {
+            width: 50%;
+            border-radius: 4px;
+            height: 20px;
+        }
+        
+        select {
+            width: 50%;
+            border-radius: 3px;
+            border: 5px;
+        }
+        
+        td[id="rohit"] {
+            border: solid grey;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        a:hover {
+            color: cyan;
+            cursor: pointer;
+        }
+        
+        footer {
+            background-color: blue;
+            text-align: right;
+            line-height: 97px;
+            margin-top: 150px;
+        }
+        
+        small {
+            color: white;
+        }
+        
+        small img {
+            display: inline-block;
+            float: left;
+            margin: 10px;
+            width: 250px;
+            height: 80px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header1">
+        <img src = "{{ url_for('static', filename='imgs/LOGO.jpg'  ) }}" alt="logo" id="logo1">
+        <div id="icon-links">
+            <ul id="links_header" type="none">
+                <li>
+                    
+                    <a href="{{ url_for('index') }}"><img src = "{{ url_for('static', filename='imgs/home.png' ) }}" class="icon" /> <span>HOME</span></a>
+               
+                    
+                </li>
+                <li>
+                    <a href="{{ url_for('about') }}"><img src = "{{ url_for('static', filename='imgs/about.png' ) }}" class="icon" /><span>ABOUT</span></a>
+                
+                </li>
+                <li>
+                    <a href="{{ url_for('patient_care') }}"><img src = "{{ url_for('static', filename='imgs/pcs.jpg' ) }}" class="icon" /><span>PATIENT CARE AND SERVICE</span></a>
+                
+                </li>
+                <li>
+                    <a href="{{ url_for('specialist') }}"><img src = "{{ url_for('static', filename='imgs/specialist.jpg' ) }}" class="icon" /><span>SPECIALISTS</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('opd') }}"><img src = "{{ url_for('static', filename='imgs/opd.png' ) }}" class="icon" /><span>OUT PATIENT DEPARTMENT</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('faq') }}"><img src = "{{ url_for('static', filename='imgs/faq.png' ) }}" class="icon" /><span>FEEDBACK AND QUERY</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('career') }}"><img src = "{{ url_for('static', filename='imgs/career.png' ) }}" class="icon" /><span>CAREER</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('donation') }}"><img src = "{{ url_for('static', filename='imgs/donation.png' ) }}" class="icon" /><span>DONATION</span></a>
+                </li>
+                <li>
+                    <a href="{{ url_for('contact') }}"><img src = "{{ url_for('static', filename='imgs/contact.png' ) }}" class="icon" /><span>CONTACT US</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <table width="1515" height="50" border="1">
+        <tr>
+            <td>
+                <center>
+                    <form>
+                        <font face="verdana" size="10"> <b>PATIENT</b></font>
+                        <tr>
+                            <td>
+                                <input type="radio" name="PATIENT" value="General Patient">General Patient
+                                <input type="radio" name="PATIENT" value="Corporate Patient">Corporate Patient
+                            </td>
+                        </tr>
+                    </form>
+                </center>
+            </td>
+        </tr>
+
+    </table><br>
+    <table width="1515" height="200" border="1">
+        <tr>
+            <tr>
+                <td>&emsp;<b>Personal Info</b></td>
+            </tr>
+            <td>
+                &emsp;Registration No.
+                <input type="number" placeholder="3512-22-0054"></td>
+            <td>
+                Date &nbsp;&emsp;&emsp;&emsp;
+                <input type="date"></td>
+        </tr>
+        <tr>
+            <td>
+                &emsp;Patient ID &emsp;&emsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" placeholder="OP00-0054"></td>
+            <td>
+                Gender&emsp;&emsp;
+                <select>
+			<option>Male</option>
+			<option>Female</option>
+			<option>Others</option>
+		</select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &emsp;First Name&emsp;&emsp;&nbsp;
+                <input type="text" placeholder="first name">
+            </td>
+            <td>
+                DOB&emsp;&emsp;&emsp;&nbsp;
+                <input type="date">&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &emsp;Last Name&emsp;&emsp;&nbsp;
+                <input type="text" placeholder="last name">
+            </td>
+            <td>
+                Blood Group
+                <select>
+		<option>A+</option>
+		<option>B+</option>
+		<option>A-</option>
+		<option>B-</option>
+		<option>AB+</option>
+		<option>AB-</option>
+		<option>O+</option>
+		<option>O-</option>
+	</select>
+            </td>
+        </tr>
+        <tr>
+            <td>&emsp;Nationality Id&emsp;&emsp;
+                <input type="number" placeholder="110900852317"></td>
+            <td>
+                Nationality&emsp;
+                <input type="country" placeholder="india">
+            </td>
+        </tr>
+
+    </table><br>
+    <table width="1515" height="50" border="1">
+
+
+        <table width="1515" height="350" border="1">
+            <tr>
+                <td>&emsp;Occupation&emsp;&emsp;
+                    <input type="text" placeholder="Engineer"></td>
+                <tr>
+                    <td>
+                        &emsp;Mobile No.(1)&emsp;
+                        <input type="number" placeholder="9986543321">
+                    </td>
+                </tr>
+                <tr>
+                    <td>&emsp;Mobile No.(2)&emsp;
+                        <input type="number" placeholder="9056784421">
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>&emsp;Father/Spouse</b></td>
+                </tr>
+                <tr>
+                    <td>
+                        &emsp;First Name&emsp;&emsp;
+                        <input type="text" placeholder="Andrew">
+                    </td>
+                    <td align="center">
+                        Last Name&nbsp;&nbsp;
+                        <input type="text" placeholder="Smith">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &emsp;House No.&emsp;&emsp;
+                        <input type="number" placeholder="239/3">
+
+                    </td>
+                    <td align="center"> Street Name
+                        <input type="text" placeholder="North Street"></td>
+                </tr>
+                <tr>
+                    <td>
+                        &emsp;City/Town&emsp;&emsp;&nbsp;&nbsp;
+                        <input type="text" placeholder="Jalandhar">
+                    </td>
+                    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;State &emsp;&emsp;&emsp;
+                        <input type="text" placeholder="Punjab"></td>
+                </tr>
+                <tr>
+                    <td>&emsp;Pin&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+                        <input type="number" placeholder="144411"></td>
+                    <td align="center">Contact No.
+                        <input type="number" placeholder="9773075901"></td>
+                </tr>
+                <tr>
+                    <td>&emsp;Post Box No.&nbsp;&nbsp;&nbsp;
+                        <input type="number"></td>
+                    <td align="center">
+                        Fax Number
+                        <input type="number" placeholder="5026474010">
+                    </td>
+                </tr>
+            </tr>
+        </table>
+    </table>
+    <br>
+    <table width="1515" height="50" border="1" id="rohit">
+        <tr>
+            <td id="rohit">
+
+                <b><a href="opd.html">ADD</a></b></td>
+
+            <td id="rohit"><b><a href="opd.html">UPDATE 	
+<script>
+window.alert("Information is updated");
+</script></a></b></td>
+
+            <td id="rohit"><b><a href="opd.html">RESET</a></b></td>
+
+            <td id="rohit"><b>SEARCH</b></td>
+            <td id="rohit"><b><a href="homepage2.html">QUIT</a></b></td>
+        </tr>
+    </table>
+
+    <br><br><br>
+    <footer>
+        <small>
+            <img src = "{{ url_for('static', filename='imgs/LOGO.jpg'  ) }}" alt="logo" id="logo1">
+            
+            Copyright &copy Bravins Maternity and Rescue Center &nbsp; &nbsp;</small>
+    </footer>
+</body>
+
+</html>
